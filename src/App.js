@@ -5,7 +5,7 @@ import FacebookLogin from 'react-facebook-login';
 
 function App() {
   const handleLogin = googleData => {
-    let url = "https://localhost:5001/api/auth/google-signin";
+    let url = "https://98b2-52-90-188-33.ngrok.io/api/auth/google-signin";
     console.log("googleData", googleData);
     let data = {
       idToken: googleData.tokenId,
@@ -24,7 +24,7 @@ function App() {
 
   const responseFacebook = (response) => {
     console.log(response);
-    let url = "https://localhost:5001/api/auth/facebook-signin";
+    let url = "https://98b2-52-90-188-33.ngrok.io/api/auth/facebook-signin";
     let data = {
       idToken: response.accessToken,
       provider: 'facebook'
